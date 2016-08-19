@@ -68,7 +68,7 @@
                         <li class="active"><a href="index.php">Suzuki</a></li>
                         <li><a href="motocicletas.html">Motocicletas</a></li>
                         <li><a href="accesorios.html">Accesorios</a></li>
-                        <li><a href="cotizador.html">Cotizador</a></li>
+                        <li id='oculto' style='display:none;'><a href="cotizador.html">Cotizador</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
@@ -81,18 +81,22 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <h5 class="texto">Usuario</h5 class="label">
+                                <li style="margin-top:10px">
+                                    <!-- <h5 class="texto">Usuario</h5 class="label"> -->
                                     <input type="text"  class="form-control input" id="nombre" name="nombre" placeholder="Usuario" required/>
                                 </li>
                                 <li>
-                                    <h5 class="texto">Password</h5 class="label">
+                                    <!-- <h5 class="texto">Password</h5 class="label"> -->
                                     <input type="text"  class="form-control pass" id="nombre" name="Password" placeholder="Password" required/>
                                 </li>
+                                <li onclick="mostrar()" style="margin-bottom:5px;margin-left:5px;margin-right:10px"><a href="#">Iniciar</a>
+                                </li>
+                                <li onclick="ocultar()" style="margin-bottom:5px;margin-left:5px;margin-right:10px"><a href="#">Cerrar</a>
+                                </li> 
                             </ul>
                         </li>
-                        <!-- <li><a href="blog.html">Blog</a></li> 
-                        <li><a href="contact-us.html">Contact</a></li>  -->                       
+                        
+                        <!-- <li><a href="contact-us.html">Contact</a></li>                         -->
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -259,6 +263,7 @@
         </div>
     </footer><!--/#footer-->
 
+    <script type="text/javascript" src="js/ocultar.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
