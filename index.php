@@ -179,10 +179,12 @@
         </a>
     </section><!--/#main-slider-->
 
+    <!-- FINDET -->
+
     <section id="feature" >
         <div class="container">
            <div class="center wow fadeInDown">
-                <h2>Servicios</h2>
+                <h2>Canales de Venta</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
 
@@ -238,15 +240,13 @@
                 </div><!--/.services-->
             </div><!--/.row-->    
         </div><!--/.container-->
-    </section><!--/#feature-->
-
-    
+    </section><!--/#feature-->    
 
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                    &copy;SuzukiOaxaca (951) 144 88 05.
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
