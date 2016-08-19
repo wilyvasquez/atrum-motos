@@ -7,20 +7,25 @@
     <meta name="author" content="">
     <title>Suzuki</title>
     
+    <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-        
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head>
-<body>
+</head><!--/head-->
+
+<body class="homepage">
 
     <header id="header">
         <div class="top-bar">
@@ -60,17 +65,17 @@
                 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.php">Suzuki</a></li>
+                        <li class="active"><a href="index.php">Suzuki</a></li>
                         <li><a href="motocicletas.html">Motocicletas</a></li>
                         <li><a href="accesorios.html">Accesorios</a></li>
                         <li><a href="cotizador.html">Cotizador</a></li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
                                 <!-- <li><a href="#">Eventos</a></li> -->
                                 <li><a href="nosotros.html">About Us</a></li>
-                                <li class="active"><a href="contacto.html">Contacto</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -85,90 +90,23 @@
                                     <input type="text"  class="form-control pass" id="nombre" name="Password" placeholder="Password" required/>
                                 </li>
                             </ul>
-                        </li>                      
+                        </li>
+                        <!-- <li><a href="blog.html">Blog</a></li> 
+                        <li><a href="contact-us.html">Contact</a></li>  -->                       
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
         
     </header><!--/header-->
-    <div class="row col-md-12" style="height:500px">
-         <div class="margen1">
-            <center><label class="sombra2">CONTACTANOS PARA CUALQUIER DUDA O COTIZACION</label></center>
-        </div>
-        <div class="col-md-12">
-            <div class="img">
-                <center><img width="800px" height="300px" src="images/contacto.png" alt=""></center>
-            </div>
-        </div>
-        <!--<div class="col-md-4">
-            <div class="img">
-                <img  width="400" src="images/contacto.jpg" alt="">
-            </div>
-        </div>
-        <div class="col-md-3 margen">
-            <label class="sombra1">Atrum Motors S.A de C.V</label><br><br>
-            <div class="sombra">
-            <label class="">Simbolos Patrios 1002a,</label><br>
-            <label class="">Col. Ex-Hacienda Candiani</label><br>
-            <label class="">Oaxaca, Oax., Mexico, c.p 68130</label><br>
-            <label class="">Contactos@suzukioaxaca.com.mx</label><br>
-            <label class="">Tel: (951) 144 88 05 / 144 74 87</label><br>
 
-            </div>
-            <div><br><br><br>
-                <label>Nuestro horario de atención en SuzukiOaxaca es de 09:00 a 19:00 hrs, de lunes a sábado.</label>
-            </div>
-        </div>
-        <div class="col-md-3 margen">
-            <div class="col-md-12 borde">
-                <label for="comment">NOMBRE:</label>
-                <input type="text" class="form-control"  placeholder="NOMBRE COMPLETO">
-            </div>
-            <div class="col-md-12 borde">
-                <label for="comment">EMAIL:</label>
-                <input type="text" class="form-control"  placeholder="EXAMPLE@EXAMPLE.COM.MX">
-            </div>
-            <div class="col-md-12 borde">
-            <label for="comment">ASUNTO:</label>
-                <input type="text" class="form-control"  placeholder="ASUNTO">
-            </div>
-            <div class="form-group col-md-12">
-              <label for="comment">MENSAJE:</label>
-              <textarea class="form-control" rows="5" id="comment" placeholder="MENSAJE"></textarea>
-            </div>
-        </div> --> 
-    </div>
-    <div class="row">
-        <div class="col-md-4 margen">
-            <div class="col-md-12 borde">
-                <label for="comment">NOMBRE:</label>
-                <input type="text" class="form-control"  placeholder="NOMBRE COMPLETO">
-            </div>
-            <div class="col-md-12 borde">
-                <label for="comment">EMAIL:</label>
-                <input type="text" class="form-control"  placeholder="EXAMPLE@EXAMPLE.COM.MX">
-            </div>
-            <div class="col-md-12 borde">
-            <label for="comment">ASUNTO:</label>
-                <input type="text" class="form-control"  placeholder="ASUNTO">
-            </div>
-            <div class="form-group col-md-12">
-              <label for="comment">MENSAJE:</label>
-              <textarea class="form-control" rows="5" id="comment" placeholder="MENSAJE"></textarea>
-            </div>
-        </div> 
-           <div class="col-md-4" >
-              <h2>Encuentranos AQUI..!</h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1907.3367961715908!2d-96.7176081!3d17.0396734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9c463db0929b3e!2sSuzuki!5e0!3m2!1ses!2smx!4v1471553711952" width="500" height="300" frameborder="10" style="border:5"></iframe>              
-            </div>
-    </div><br>
-    </div>
+    
+
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy;SuzukiOaxaca (951) 144 88 05.
+                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
@@ -179,7 +117,7 @@
                 </div>
             </div>
         </div>
-    </footer><!--/#footer-->   
+    </footer><!--/#footer-->
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
