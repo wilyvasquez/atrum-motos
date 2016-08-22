@@ -130,10 +130,10 @@
               <textarea class="form-control" rows="5" id="comment" placeholder="MENSAJE"></textarea>
             </div>
         </div> 
-           <div class="col-md-4">
-              <h2>Encuentranos AQUI..!</h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1907.3367961715908!2d-96.7176081!3d17.0396734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9c463db0929b3e!2sSuzuki!5e0!3m2!1ses!2smx!4v1471553711952" width="500" height="300" frameborder="10" style="border:5"></iframe>              
-            </div>
+        <div class="col-md-8">
+            <h2>Encuentranos AQUI..!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1907.3367961715908!2d-96.7176081!3d17.0396734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9c463db0929b3e!2sSuzuki!5e0!3m2!1ses!2smx!4v1471553711952" width="500" height="300" frameborder="10" style="border:5"></iframe>              
+        </div>
     </div><br>
     </div>
     <footer id="footer" class="midnight-blue">
