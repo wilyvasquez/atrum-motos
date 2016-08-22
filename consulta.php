@@ -1,9 +1,6 @@
 <?php
-session_start();
-include_once "conexion.php";
-
 function verificar_login($user,$password,&$result) {
-    $sql = "SELECT * FROM usuarios WHERE usuario = '$user' and password = '$password'";
+    $sql = "SELECT * FROM usuarios WHERE usuario = '$user' and pass = '$password'";
     $rec = mysql_query($sql);
     $count = 0;
 
@@ -11,6 +8,7 @@ function verificar_login($user,$password,&$result) {
     {
         $count++;
         $result = $row;
+        echo $rec;
     }
 
     if($count == 1)
@@ -31,11 +29,11 @@ if(!isset($_SESSION['userid']))
         if(verificar_login($_POST['user'],$_POST['password'],$result) == 1)
         {
             $_SESSION['userid'] = $result->idusuario;
-            header("location:index.php");
+            header("location:index2.php");
         }
         else
         {
-            echo '<div class="error">Su usuario es incorrecto, intente nuevamente.</div>';
+            // echo '<div class="error">Su usuario es incorrecto, intente nuevamente.</div>';
         }
     }
 } 

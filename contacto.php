@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    include('conexion.php');
+    include('consulta.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,33 +66,38 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="index.php">Suzuki</a></li>
-                        <li><a href="motocicletas.html">Motocicletas</a></li>
-                        <li><a href="accesorios.html">Accesorios</a></li>
-                        <li id='oculto' style='display:none;'><a href="cotizador.html">Cotizador</a>
+                        <li><a href="motocicletas.php">Motocicletas</a></li>
+                        <li><a href="accesorios.php">Accesorios</a></li>                        
                         <li class="dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
                                 <!-- <li><a href="#">Eventos</a></li> -->
-                                <li><a href="nosotros.html">About Us</a></li>
-                                <li class="active"><a href="contacto.html">Contacto</a></li>
+                                <li><a href="nosotros.php">About Us</a></li>
+                                <li class="active"><a href="contacto.php">Contacto</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <h5 class="texto">Usuario</h5 class="label">
-                                    <input type="text"  class="form-control input" id="nombre" name="nombre" placeholder="Usuario" required/>
-                                </li>
-                                <li>
-                                    <h5 class="texto">Password</h5 class="label">
-                                    <input type="text"  class="form-control pass" id="nombre" name="Password" placeholder="Password" required/>
-                                </li>
-                                <li onclick="mostrar()" style="margin-bottom:5px;margin-left:5px;margin-right:10px"><a href="#">Iniciar</a>
-                                </li>
-                                <li onclick="ocultar()" style="margin-bottom:5px;margin-left:5px;margin-right:10px"><a href="#">Cerrar</a>
-                                </li>
+                                <form action="" method="post" class="login">
+                                    <center>
+                                    <img class="img-circle" src="images/su.png" width="50px" height="50px" style="margin-top:5px">
+                                    </center>
+                                    <li style="margin-top:5px">
+                                        <input type="text"  class="form-control input" name="user" placeholder="Usuario" required/>
+                                        <!-- <label>Username</label><input name="user" type="text" > -->
+                                    </li>
+                                    <li style="margin-top:5px">
+                                        <input type="password"  class="form-control input" name="password" placeholder="Password" required/>
+                                        <!-- <label>Password</label><input name="password" type="password"> -->
+                                    </li>
+                                    <li>
+                                        <div style="margin-top:5px;margin-left:10px;margin-bottom:5px">
+                                            <input class="btn btn-default" name="login" type="submit" value="login">
+                                        </div> 
+                                    </li>   
+                                </form>
                             </ul>
                         </li> 
                     </ul>
@@ -96,7 +106,7 @@
         </nav><!--/nav-->
         
     </header><!--/header-->
-    <div class="row col-md-12" style="height:500px">
+    <!-- <div class="row col-md-12" style="height:500px">
          <div class="margen1">
             <center><label class="sombra2">CONTACTANOS PARA CUALQUIER DUDA O COTIZACION</label></center>
         </div>
@@ -105,47 +115,10 @@
                 <center><img width="800px" height="300px" src="images/contacto.png" alt=""></center>
             </div>
         </div>
-        <!--<div class="col-md-4">
-            <div class="img">
-                <img  width="400" src="images/contacto.jpg" alt="">
-            </div>
-        </div>
-        <div class="col-md-3 margen">
-            <label class="sombra1">Atrum Motors S.A de C.V</label><br><br>
-            <div class="sombra">
-            <label class="">Simbolos Patrios 1002a,</label><br>
-            <label class="">Col. Ex-Hacienda Candiani</label><br>
-            <label class="">Oaxaca, Oax., Mexico, c.p 68130</label><br>
-            <label class="">Contactos@suzukioaxaca.com.mx</label><br>
-            <label class="">Tel: (951) 144 88 05 / 144 74 87</label><br>
-
-            </div>
-            <div><br><br><br>
-                <label>Nuestro horario de atención en SuzukiOaxaca es de 09:00 a 19:00 hrs, de lunes a sábado.</label>
-            </div>
-        </div>
-        <div class="col-md-3 margen">
-            <div class="col-md-12 borde">
-                <label for="comment">NOMBRE:</label>
-                <input type="text" class="form-control"  placeholder="NOMBRE COMPLETO">
-            </div>
-            <div class="col-md-12 borde">
-                <label for="comment">EMAIL:</label>
-                <input type="text" class="form-control"  placeholder="EXAMPLE@EXAMPLE.COM.MX">
-            </div>
-            <div class="col-md-12 borde">
-            <label for="comment">ASUNTO:</label>
-                <input type="text" class="form-control"  placeholder="ASUNTO">
-            </div>
-            <div class="form-group col-md-12">
-              <label for="comment">MENSAJE:</label>
-              <textarea class="form-control" rows="5" id="comment" placeholder="MENSAJE"></textarea>
-            </div>
-        </div> --> 
-    </div>
-    <div class="row">
-        <div class="col-md-4 margen">
-            <div class="col-md-12 borde">
+    </div> -->
+    <div class="container">
+        <div class="col-md-4">
+            <div class="col-md-12">
                 <label for="comment">NOMBRE:</label>
                 <input type="text" class="form-control"  placeholder="NOMBRE COMPLETO">
             </div>
@@ -162,7 +135,7 @@
               <textarea class="form-control" rows="5" id="comment" placeholder="MENSAJE"></textarea>
             </div>
         </div> 
-           <div class="col-md-4" >
+           <div class="col-md-4">
               <h2>Encuentranos AQUI..!</h2>
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1907.3367961715908!2d-96.7176081!3d17.0396734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9c463db0929b3e!2sSuzuki!5e0!3m2!1ses!2smx!4v1471553711952" width="500" height="300" frameborder="10" style="border:5"></iframe>              
             </div>

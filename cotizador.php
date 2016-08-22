@@ -65,16 +65,16 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="index.php">Suzuki</a></li>
-                        <li><a href="motocicletas.html">Motocicletas</a></li>
-                        <li><a href="accesorios.html">Accesorios</a></li>
-                        <li class="active"><a href="cotizador.html">Cotizador</a></li>
+                        <li><a href="motocicletas.php">Motocicletas</a></li>
+                        <li><a href="accesorios.php">Accesorios</a></li>
+                        <li class="active"><a href="cotizador.php">Cotizador</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
                                 <!-- <li><a href="#">Eventos</a></li> -->
-                                <li><a href="nosotros.html">About Us</a></li>
-                                <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="nosotros.php">About Us</a></li>
+                                <li><a href="contacto.php">Contacto</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -99,18 +99,18 @@
             </div><!--/.container-->
         </nav><!--/nav-->        
     </header>    
-    <div class="row">
-        <div class="col-md-offset-1 col-md-10">
-            <div class="row">
-                <div class="col-md-10">
-                    <h3><strong>COTIZADOR</strong></h3>
-                </div>
-                <div class="col-md-2" style="margin-top:20px">
-                    <input class="btn btn btn-info" type="submit" value="Cotizar">                   
-                </div>
+    <!-- <section id="cotizador"> -->
+    <div class="container">
+      <div class="row">
+            <div class="col-md-10">
+                <h3><strong>COTIZADOR</strong></h3>
             </div>
-            <hr>
-            <div class="row col-md-7">
+            <div class="col-md-2" style="margin-top:20px">
+                <input class="btn btn btn-info" type="submit" value="Cotizar">                   
+            </div>
+        </div>
+        <hr>
+        <div class="row col-md-7">
                 <div class="col-md-4 form-group">
                     <label for="tipo">TIPO DE MOTO </label>
                     <div class="row" style="margin-left:2px">
@@ -170,7 +170,7 @@
                 </div>
                 <div class="col-md-4 form-group">
                     <label for="credi">CREDITO A: </label>
-                    <select class="selectpicker" data-live-search="true" data-size="5" data-width="150px" data->
+                    <select class="selectpicker" data-live-search="true" data-size="5" data-width="150px">
                         <option>suzuki</option>
                         <option>honda</option>
                         <option>bajaj</option>
@@ -199,9 +199,9 @@
                     <label for="fecha">FECHA DE COTIZACION: </label>
                     <input type="date" id="fecha" name="fecha" class="form-control" value="<?php echo date('Y-md') ?>">
                 </div>
-                </div>
-            <div class="row" style="margin-top:50px">
-                <div class="col-md-5">
+        </div>
+        <div class="row" style="margin-top:50px">
+            <div class="col-md-5">
                     <table data-toggle="table" data-click-to-select="true" data-single-select="true">
                         <thead>
                             <tr>
@@ -240,75 +240,73 @@
                             </tr>
                           </tbody>
                     </table>
-                </div>
             </div>
         </div>
-    </div>
-
-    <div class="row">
-    <div class="col-md-offset-1 col-md-10">
         <div class="row">
-            <div class="col-lg-12">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
                 <h3><strong>COSTOS</strong></h3>
+              </div>
             </div>
-        </div>
-    <hr>
-        <div class="row col-md-9">
-          <!-- <div class="row col-md-12"> -->
+            <hr>
+            <div class="row col-md-9">
               <div class="col-md-3">
-                <label>FINANCIAMIENTO</label>              
+                <label>FINANCIONAMIENTO</label>
               </div>
               <div class="col-md-3">
-                  <input type="text" class="form-control"  placeholder="FINANCIAMIENTO" disabled/>
+                <input type="text" class="form-control" placeholder="FINANCIAMIENTO" disabled/>
               </div>
               <div class="col-md-3">
-                <label>COSTO APERTURA</label>              
+                <label>COSTO APERTURA</label>
               </div>
               <div class="col-md-3 borde">
-                  <input type="text" class="form-control"  placeholder="COSTO APERTURA" disabled/>
+                <input type="text" class="form-control" placeholder="COSTO APERTURA" disabled/>
               </div>
               <div class="col-md-3 borde">
-                <label>COSTO MOTOCICLETA</label>              
-              </div>
-              <div class="col-md-3">
-                  <input type="text" class="form-control"  placeholder="COSTO MOTOCICLETA" disabled/>
-              </div>
-              <div class="col-md-3 borde">
-                <label>BASE DEL CREDITO</label>              
-              </div>
-              <div class="col-md-3 borde">
-                  <input type="text" class="form-control"  placeholder="BASE DEL CREDITO" disabled/>
-              </div>
-              <div class="col-md-3 borde">
-                <label>ENGANCHE</label>              
-              </div>
-              <div class="col-md-3">
-                  <input type="text" class="form-control"  placeholder="ENGANCHE" disabled/>
-              </div>
-              <div class="col-md-3 borde">
-                <label>IMPORTE DEL CREDITO</label>              
-              </div>
-              <div class="col-md-3 borde">
-                  <input type="text" class="form-control"  placeholder="IMPORTE DEL CREDITO" disabled/>
-              </div>
-              <div class="col-md-3 borde">
-                <label>SEGURO DE LA UNIDAD</label>              
-              </div>
-              <div class="col-md-3">
-                  <input type="text" class="form-control"  placeholder="SEGURO DE LA UNIDAD" disabled/>
-              </div>
-        </div><!-- /.row -->
-        <div class="row">
-            <div class="col-md-3">
-                    <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                        <a class="thumbnail" href="#">
-                            <img width=400 height=200 class="img-responsive" src="http://www.yamaha-motor.com.mx/images/motos/yz250fx_2015.jpg" alt="">
-                        </a>
-                    <!-- </div> -->
+                    <label>COSTO MOTOCICLETA</label>              
+                  </div>
+                  <div class="col-md-3">
+                      <input type="text" class="form-control"  placeholder="COSTO MOTOCICLETA" disabled/>
+                  </div>
+                  <div class="col-md-3 borde">
+                    <label>BASE DEL CREDITO</label>              
+                  </div>
+                  <div class="col-md-3 borde">
+                      <input type="text" class="form-control"  placeholder="BASE DEL CREDITO" disabled/>
+                  </div>
+                  <div class="col-md-3 borde">
+                    <label>ENGANCHE</label>              
+                  </div>
+                  <div class="col-md-3">
+                      <input type="text" class="form-control"  placeholder="ENGANCHE" disabled/>
+                  </div>
+                  <div class="col-md-3 borde">
+                    <label>IMPORTE DEL CREDITO</label>              
+                  </div>
+                  <div class="col-md-3 borde">
+                      <input type="text" class="form-control"  placeholder="IMPORTE DEL CREDITO" disabled/>
+                  </div>
+                  <div class="col-md-3 borde">
+                    <label>SEGURO DE LA UNIDAD</label>              
+                  </div>
+                  <div class="col-md-3">
+                      <input type="text" class="form-control"  placeholder="SEGURO DE LA UNIDAD" disabled/>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                        <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
+                    <a class="thumbnail" href="#">
+                        <img width=400 height=200 class="img-responsive" src="http://www.yamaha-motor.com.mx/images/motos/yz250fx_2015.jpg" alt="">
+                    </a>
+                        <!-- </div> -->
                 </div>
-        </div>
+            </div>
+          </div>
+        </div>  
     </div>
-    </div><br>
+    <!-- </section> -->
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">

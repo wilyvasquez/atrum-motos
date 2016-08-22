@@ -1,9 +1,3 @@
-<?php
-    session_start();
-    include('conexion.php');
-    include('consulta.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,48 +56,25 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img width="110" height="60" src="images/suzuki.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index2.php"><img width="110" height="60" src="images/suzuki.png" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.php">Suzuki</a></li>
-                        <li><a href="motocicletas.php">Motocicletas</a></li>
-                        <li><a href="accesorios.php">Accesorios</a></li>
-                        <!-- <li id='oculto'><a href="cotizador.html">Cotizador</a></li> -->
+                        <li class="active"><a href="index2.php">Suzuki</a></li>
+                        <li><a href="motocicletas2.html">Motocicletas</a></li>
+                        <li><a href="accesorios2.html">Accesorios</a></li>
+                        <li id='oculto'><a href="cotizador2.html">Cotizador</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
                                 <!-- <li><a href="#">Eventos</a></li> -->
-                                <li><a href="nosotros.php">About Us</a></li>
-                                <li><a href="contacto.php">Contacto</a></li>
+                                <li><a href="nosotros2.html">About Us</a></li>
+                                <li><a href="contacto2.html">Contacto</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <form action="" method="post" class="login">
-                                    <center>
-                                    <img class="img-circle" src="images/su.png" width="50px" height="50px" style="margin-top:5px">
-                                    </center>
-                                    <li style="margin-top:5px">
-                                        <input type="text"  class="form-control input" name="user" placeholder="Usuario" required/>
-                                        <!-- <label>Username</label><input name="user" type="text" > -->
-                                    </li>
-                                    <li style="margin-top:5px">
-                                        <input type="password"  class="form-control input" name="password" placeholder="Password" required/>
-                                        <!-- <label>Password</label><input name="password" type="password"> -->
-                                    </li>
-                                    <li>
-                                        <div style="margin-top:5px;margin-left:10px;margin-bottom:5px">
-                                            <input class="btn btn-default" name="login" type="submit" value="login">
-                                        </div> 
-                                    </li>   
-                                </form>
-                            </ul>
-                        </li>
-                        
+                        <li><a href="index.php">Cerrar Sesion</a>                        
                         <!-- <li><a href="contact-us.html">Contact</a></li>                         -->
                     </ul>
                 </div>
@@ -262,7 +233,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="index.php">Suzuki</a></li>
+                        <li><a href="index2.php">Suzuki</a></li>
                         <li><a href="nosotros.html">About Us</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>

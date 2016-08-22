@@ -60,43 +60,25 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img width="110" height="60" src="images/suzuki.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index2.php"><img width="110" height="60" src="images/suzuki.png" alt="logo"></a>
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.php">Suzuki</a></li>
-                        <li><a href="motocicletas.html">Motocicletas</a></li>
-                        <li><a href="accesorios.html">Accesorios</a></li>
-                        <li id='oculto' style='display:none;'><a href="cotizador.html">Cotizador</a>
+                        <li><a href="index2.php">Suzuki</a></li>
+                        <li><a href="motocicletas2.html">Motocicletas</a></li>
+                        <li><a href="accesorios2.html">Accesorios</a></li>
+                        <li id='oculto'><a href="cotizador2.html">Cotizador</a>
                         <li class="dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
                                 <!-- <li><a href="#">Eventos</a></li> -->
-                                <li class="active"><a href="nosotros.html">About Us</a></li>
-                                <li><a href="contacto.html">Contacto</a></li>
+                                <li class="active"><a href="nosotros2.html">About Us</a></li>
+                                <li><a href="contacto2.html">Contacto</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <h5 class="texto">Usuario</h5 class="label">
-                                    <input type="text"  class="form-control input" id="nombre" name="nombre" placeholder="Usuario" required/>
-                                </li>
-                                <li>
-                                    <h5 class="texto">Password</h5 class="label">
-                                    <input type="text"  class="form-control pass" id="nombre" name="Password" placeholder="Password" required/>
-                                </li>
-                                <li onclick="mostrar()" style="margin-bottom:5px;margin-left:5px;margin-right:10px"><a href="#">Iniciar</a>
-                                </li>
-                                <li onclick="ocultar()" style="margin-bottom:5px;margin-left:5px;margin-right:10px"><a href="#">Cerrar</a>
-                                </li> 
-                            </ul>
-                        </li>
-                        <!-- <li><a href="blog.html">Blog</a></li> 
-                        <li><a href="contact-us.html">Contact</a></li>  -->                       
+                        <li><a href="index.php">Cerrar Sesion</a>                      
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -156,7 +138,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="index.php">Suzuki</a></li>
+                        <li><a href="index2.php">Suzuki</a></li>
                         <li><a href="nosotros.html">About Us</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>

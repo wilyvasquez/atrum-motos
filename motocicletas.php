@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    include('conexion.php');
+    include('consulta.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +11,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Suzuki</title>
-    
+	
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-        
+	    
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -57,57 +62,62 @@
                     </button>
                     <a class="navbar-brand" href="index.php"><img width="110" height="60" src="images/suzuki.png" alt="logo"></a>
                 </div>
-                
+				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="index.php">Suzuki</a></li>
-                        <li><a href="motocicletas.html">Motocicletas</a></li>
-                        <li  class="active"><a href="accesorios.html">Accesorios</a></li>
-                        <li id='oculto' style='display:none;'><a href="cotizador.html">Cotizador</a>
+                        <li class="active"><a href="motocicletas.php">Motocicletas</a></li>
+                        <li><a href="accesorios.php">Accesorios</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
                                 <!-- <li><a href="#">Eventos</a></li> -->
-                                <li><a href="nosotros.html">About Us</a></li>
-                                <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="nosotros.php">About Us</a></li>
+                                <li><a href="contacto.php">Contacto</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <h5 class="texto">Usuario</h5 class="label">
-                                    <input type="text"  class="form-control input" id="nombre" name="nombre" placeholder="Usuario" required/>
-                                </li>
-                                <li>
-                                    <h5 class="texto">Password</h5 class="label">
-                                    <input type="text"  class="form-control pass" id="nombre" name="Password" placeholder="Password" required/>
-                                </li>
-                                <li onclick="mostrar()" style="margin-bottom:5px;margin-left:5px;margin-right:10px"><a href="#">Iniciar</a>
-                                </li>
-                                <li onclick="ocultar()" style="margin-bottom:5px;margin-left:5px;margin-right:10px"><a href="#">Cerrar</a>
-                                </li>
+                                <form action="" method="post" class="login">
+                                    <center>
+                                    <img class="img-circle" src="images/su.png" width="50px" height="50px" style="margin-top:5px">
+                                    </center>
+                                    <li style="margin-top:5px">
+                                        <input type="text"  class="form-control input" name="user" placeholder="Usuario" required/>
+                                        <!-- <label>Username</label><input name="user" type="text" > -->
+                                    </li>
+                                    <li style="margin-top:5px">
+                                        <input type="password"  class="form-control input" name="password" placeholder="Password" required/>
+                                        <!-- <label>Password</label><input name="password" type="password"> -->
+                                    </li>
+                                    <li>
+                                        <div style="margin-top:5px;margin-left:10px;margin-bottom:5px">
+                                            <input class="btn btn-default" name="login" type="submit" value="login">
+                                        </div> 
+                                    </li>   
+                                </form>
                             </ul>
-                        </li>
+                        </li>                      
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-        
+		
     </header><!--/header-->
-    
-    <div class="container">
+	
+	<div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h3>ACCESORIOS</h3>
+                <h3>Motocicletas</h3>
             </div>
         </div>
 
         <div class="row text-center">
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img width="200" src="http://www.mototres.net/images/productos/FABRICANTES/SUZUKI/990D0-SC000-YUS.jpg" alt="">
+                    <img src="http://img.autocosmos.com/noticias/fotosprinc/24572_26123451872.jpg" alt="">
                     <div class="caption cuadro">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -120,7 +130,7 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img width="220" src="http://www.tpc2.co.uk/ekmps/shops/sophey/images/plain-leather-tool-roll-with-plait-motorcycle-accessories-[3]-583-p.jpg" alt="">
+                    <img src="http://i38.tinypic.com/2zej7gg.jpg" alt="">
                     <div class="caption cuadro ">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -133,7 +143,7 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img width="150" src="http://thumbs4.picclick.com/d/l400/pict/330772564619_/Ryde-51L-Black-Motorcycle-Back-top-Box-Luggage-helmet.jpg" alt="">
+                    <img src="http://visionauto.com.ar/wp-content/uploads/2013/12/Duke-200-509x300.jpg" alt="">
                     <div class="caption cuadro">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -146,7 +156,7 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img width="190" src="https://img1.etsystatic.com/042/0/5813527/il_340x270.570872843_m5u9.jpg" alt="">
+                    <img src="http://www.yamaha-motor.com.mx/images/motos/yz250fx_2015.jpg" alt="">
                     <div class="caption cuadro">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -158,7 +168,7 @@
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img width="150" src="http://thumbs4.picclick.com/d/l400/pict/330772564619_/Ryde-51L-Black-Motorcycle-Back-top-Box-Luggage-helmet.jpg" alt="">
+                    <img src="http://img.autocosmos.com/noticias/fotosprinc/24572_26123451872.jpg" alt="">
                     <div class="caption cuadro">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -170,7 +180,7 @@
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img width="190" src="https://img1.etsystatic.com/042/0/5813527/il_340x270.570872843_m5u9.jpg" alt="">
+                    <img src="http://visionauto.com.ar/wp-content/uploads/2013/12/Duke-200-509x300.jpg" alt="">
                     <div class="caption cuadro">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -182,7 +192,7 @@
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img width="230" src="http://www.tpc2.co.uk/ekmps/shops/sophey/images/plain-leather-tool-roll-with-plait-motorcycle-accessories-[3]-583-p.jpg" alt="">
+                    <img src="http://www.yamaha-motor.com.mx/images/motos/yz250fx_2015.jpg" alt="">
                     <div class="caption cuadro">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -194,7 +204,7 @@
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img width="200" src="http://www.mototres.net/images/productos/FABRICANTES/SUZUKI/990D0-SC000-YUS.jpg" alt="">
+                    <img src="http://i38.tinypic.com/2zej7gg.jpg" alt="">
                     <div class="caption cuadro">
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -223,7 +233,7 @@
             </div>
         </div>
     </footer><!--/#footer-->   
-    
+
     <script type="text/javascript" src="js/ocultar.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
