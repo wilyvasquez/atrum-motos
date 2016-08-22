@@ -68,7 +68,6 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
-                                <!-- <li><a href="#">Eventos</a></li> -->
                                 <li><a href="nosotros2.php">About Us</a></li>
                                 <li><a href="contacto2.php">Contacto</a></li>
                             </ul>
