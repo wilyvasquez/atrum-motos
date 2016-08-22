@@ -70,12 +70,10 @@
                         <li class="active"><a href="index.php">Suzuki</a></li>
                         <li><a href="motocicletas.php">Motocicletas</a></li>
                         <li><a href="accesorios.php">Accesorios</a></li>
-                        <!-- <li id='oculto'><a href="cotizador.html">Cotizador</a></li> -->
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
-                                <!-- <li><a href="#">Eventos</a></li> -->
                                 <li><a href="nosotros.php">About Us</a></li>
                                 <li><a href="contacto.php">Contacto</a></li>
                             </ul>
@@ -103,8 +101,6 @@
                                 </form>
                             </ul>
                         </li>
-                        
-                        <!-- <li><a href="contact-us.html">Contact</a></li>                         -->
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -263,8 +259,8 @@
                 <div class="col-sm-6">
                     <ul class="pull-right">
                         <li><a href="index.php">Suzuki</a></li>
-                        <li><a href="nosotros.html">About Us</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="nosotros.php">About Us</a></li>
+                        <li><a href="contacto.php">Contacto</a></li>
                     </ul>
                 </div>
             </div>

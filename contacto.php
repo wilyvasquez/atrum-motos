@@ -150,8 +150,8 @@
                 <div class="col-sm-6">
                     <ul class="pull-right">
                         <li><a href="index.php">Suzuki</a></li>
-                        <li><a href="nosotros.html">About Us</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="nosotros.php">About Us</a></li>
+                        <li><a href="contacto.php">Contacto</a></li>
                     </ul>
                 </div>
             </div>
