@@ -61,16 +61,16 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="index2.php">Suzuki</a></li>
-                        <li><a href="motocicletas2.html">Motocicletas</a></li>
-                        <li  class="active"><a href="accesorios2.html">Accesorios</a></li>
-                        <li><a href="cotizador2.html">Cotizador</a>
+                        <li><a href="motocicletas2.php">Motocicletas</a></li>
+                        <li  class="active"><a href="accesorios2.php">Accesorios</a></li>
+                        <li><a href="cotizador2.php">Cotizador</a>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Promociones</a></li>
                                 <!-- <li><a href="#">Eventos</a></li> -->
-                                <li><a href="nosotros2.html">About Us</a></li>
-                                <li><a href="contacto2.html">Contacto</a></li>
+                                <li><a href="nosotros2.php">About Us</a></li>
+                                <li><a href="contacto2.php">Contacto</a></li>
                             </ul>
                         </li>
                         <li><a href="index.php">Cerrar Sesion</a>
