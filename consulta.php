@@ -32,7 +32,8 @@ if(!isset($_SESSION['userid']))
             header("location:index2.php");
         }
         else
-        {
+        {   
+            echo '<script language="javascript">alert("juas");</script>'; 
             // echo '<div class="error">Su usuario es incorrecto, intente nuevamente.</div>';
         }
     }
