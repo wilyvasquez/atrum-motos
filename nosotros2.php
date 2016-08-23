@@ -13,6 +13,13 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      if(history.forward(1)){
+        location.replace( history.forward(1) );
+      }
+    </script>
            
 </head><!--/head-->
 

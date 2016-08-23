@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="Expires" content="0" /> 
+    <meta http-equiv="Pragma" content="no-cache" />
     <title>Suzuki</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +21,13 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">    
+
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      if(history.forward(1)){
+        location.replace( history.forward(1) );
+      }
+    </script>
 
 </head><!--/head-->
 
@@ -81,7 +90,7 @@
                                     <img class="img-circle" src="images/su.png" width="50px" height="50px" style="margin-top:5px">
                                     </center>
                                     <li style="margin-top:5px">
-                                        <input type="text"  class="form-control input" name="user" placeholder="Usuario" required/>
+                                        <input type="text" id="user"  class="form-control input" name="user" placeholder="Usuario" required/>
                                         <!-- <label>Username</label><input name="user" type="text" > -->
                                     </li>
                                     <li style="margin-top:5px">
@@ -89,8 +98,8 @@
                                         <!-- <label>Password</label><input name="password" type="password"> -->
                                     </li>
                                     <li>
-                                        <div style="margin-top:5px;margin-left:10px;margin-bottom:5px">
-                                            <input class="btn btn-default" name="login" type="submit" value="login">
+                                        <div id="freeow-tr" class="freeow freeow-top-right" style="margin-top:5px;margin-left:10px;margin-bottom:5px">
+                                            <input class="btn btn-default" id="freeow-show" name="login" type="submit" value="login">
                                         </div> 
                                     </li>   
                                 </form>
@@ -262,8 +271,9 @@
         </div>
     </footer><!--/#footer-->
 
-    <script type="text/javascript" src="js/ocultar.js"></script>
+    <!-- <script type="text/javascript" src="jquery.js"></script> -->
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/ocultar.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>

@@ -17,6 +17,12 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css">
         
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      if(history.forward(1)){
+        location.replace( history.forward(1) );
+      }
+    </script>
 </head><!--/head-->
 
 <body>

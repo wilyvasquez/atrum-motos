@@ -33,7 +33,9 @@ if(!isset($_SESSION['userid']))
         }
         else
         {   
-            echo '<script language="javascript">alert("juas");</script>'; 
+            // echo '<script language="javascript">document.getElementById("user").style.borderColor= "#E46262";</script>';
+            // header("location:index.php");
+            // echo '<script language="javascript">alert("juas");</script>'; 
             // echo '<div class="error">Su usuario es incorrecto, intente nuevamente.</div>';
         }
     }
